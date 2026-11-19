@@ -1,0 +1,45 @@
+{
+  "expo": {
+    "name": "Wardrobe · 내 옷장",
+    "slug": "wardrobe-rag-app",
+    "version": "1.0.0",
+    "scheme": "wardrobe",
+    "experiments": {
+      "typedRoutes": true
+    },
+    "orientation": "portrait",
+    "icon": "./assets/icon.png",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": true,
+      "bundleIdentifier": "com.wardrobelab.app"
+    },
+    "android": {
+      "package": "com.wardrobelab.app",
+      "adaptiveIcon": {
+        "backgroundColor": "#E6F4FE",
+        "foregroundImage": "./assets/android-icon-foreground.png",
+        "backgroundImage": "./assets/android-icon-background.png",
+        "monochromeImage": "./assets/android-icon-monochrome.png"
+      },
+      "predictiveBackGestureEnabled": false
+    },
+    "web": {
+      "bundler": "metro",
+      "output": "single",
+      "favicon": "./assets/favicon.png"
+    },
+    "plugins": [
+      "expo-router",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "옷장에 등록할 의류 사진을 선택합니다.",
+          "cameraPermission": "옷장에 등록할 의류를 촬영합니다.",
+          "microphonePermission": false
+        }
+      ],
+      "expo-font"
+    ]
+  }
+}
